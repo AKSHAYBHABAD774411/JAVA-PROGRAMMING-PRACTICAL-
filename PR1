@@ -1,1 +1,30 @@
+public class WrapperClassDemo {
+    public static void main(String[] args) {
+        // Primitive to Object (Autoboxing)
+        int primitiveInt = 100;
+        Integer objectInt = Integer.valueOf(primitiveInt); // Explicit conversion
+        System.out.println("Primitive int: " + primitiveInt);
+        System.out.println("Converted to Object (Integer): " + objectInt);
+
+        // Using Autoboxing (Implicit conversion)
+        Double objectDouble = 12.34; // Autoboxing
+        System.out.println("Primitive double converted to Object (Double): " + objectDouble);
+
+        // Object to Primitive (Unboxing)
+        Integer objectValue = 200; // Integer object
+        int primitiveValue = objectValue.intValue(); // Explicit conversion
+        System.out.println("Object Integer: " + objectValue);
+        System.out.println("Converted to Primitive int: " + primitiveValue);
+
+        // Using Unboxing (Implicit conversion)
+        double primitiveDouble = objectDouble; // Unboxing
+        System.out.println("Object Double converted to Primitive double: " + primitiveDouble);
+
+        // Example with other Wrapper classes
+        Boolean objectBoolean = Boolean.valueOf(true); // Primitive to Object
+        boolean primitiveBoolean = objectBoolean.booleanValue(); // Object to Primitive
+        System.out.println("Primitive boolean: " + primitiveBoolean);
+        System.out.println("Object Boolean: " + objectBoolean);
+    }
+}
 
